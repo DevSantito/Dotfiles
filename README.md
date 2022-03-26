@@ -1,1 +1,3 @@
 # Dotfiles
+
+[Qtile](.config/qtile)
