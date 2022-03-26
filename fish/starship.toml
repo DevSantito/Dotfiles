@@ -1,0 +1,24 @@
+format = """
+[$directory](bold cyan)($git_branch$git_state$git_status)
+$time $hostname $username [»](bold green) """
+
+[directory]
+style = "bold cyan"
+truncate_to_repo = false
+truncation_length = 1
+fish_style_pwd_dir_length = 1
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+style = "bold cyan"
+
+[username]
+show_always = true
+style_user = "bold white"
+format = "[$user]($style)"
+
+[time]
+disabled = true
+format = "[$time]($style)"
+time_format = "%H:%M"
